@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.OracleDialect</property>
+        <property name="hibernate.connection.driver_class">oracle.jdbc.OracleDriver</property>
+        <property name="hibernate.connection.url">db_url</property>
+        <property name="hibernate.connection.username">db_user</property>
+        <property name="hibernate.connection.password">db_password</property>
+        <property name="hibernate.show_sql">true</property>        
+        <mapping class="com.spaniard.db.Person"/>
+    </session-factory>
+</hibernate-configuration>
